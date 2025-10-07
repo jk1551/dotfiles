@@ -37,3 +37,12 @@ vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { desc = "Live
 
 -- file tree toggle
 vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file tree" })
+
+vim.keymap.set("i", "jj", "<ESC>", { silent = true }
+
+vim.diagnostics.config({
+	virtual_text = true,
+	signs = true,
+	underline = true,
+	severity_sort = true
+})
